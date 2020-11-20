@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 declare -A HHH
 declare -A TTT
 declare -A HTH
@@ -23,7 +23,6 @@ do
 random1=$((RANDOM%2))
 random2=$((RANDOM%2))
 random3=$((RANDOM%2))
-echo $random1
 if(( $random1 ==1 && $random2 ==1 && $random3 ==1 ))
 then
 
@@ -41,6 +40,7 @@ then
     ((hth++))
     ((num++))
 elif(( $random1 ==0 && $random2 ==1 && $random3 ==0 ))
+then
      THT[$tht]="THT"
     ((tht++))
     ((num++))
@@ -54,7 +54,7 @@ then
      TTH[$tth]="TTH"
     ((tth++))
     ((num++))
-elif(( $random1 ==1 && $random2 ==0 && $random ==0 ))
+elif(( $random1 ==1 && $random2 ==0 && $random3 ==0 ))
 then
      HTT[$htt]="HTT"
     ((htt++))
